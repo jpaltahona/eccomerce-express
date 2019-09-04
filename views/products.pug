@@ -13,7 +13,8 @@ block content
                 .column
                     .card
                         .card-image
-                            img(src=`${product.img}`, alt=`${product.name}`)
+                            figure.image(style="height: 190px")
+                                img(src=`${product.img}`, alt=`${product.name}` style="object-fit: cover")
                     .card-content
                         h1.title=product.name
                         .button.is-fullwidth.is-primary  
